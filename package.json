@@ -1,0 +1,31 @@
+{
+  "name": "mathexpression",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/mocha": "^5.2.5",
+    "@types/node": "^10.5.5",
+    "@types/should": "^13.0.0",
+    "chai": "^4.1.2",
+    "del": "^3.0.0",
+    "event-stream": "^3.3.4",
+    "gulp": "^3.9.1",
+    "gulp-concat": "^2.6.1",
+    "gulp-delete-file": "^1.0.2",
+    "gulp-rename": "^1.4.0",
+    "gulp-sourcemaps": "^2.6.4",
+    "gulp-typescript": "^2.14.1",
+    "gulp-uglify": "^3.0.1",
+    "mocha": "^5.2.0",
+    "should": "^13.2.3",
+    "ts-mocha": "^2.0.0",
+    "ts-node": "^7.0.1",
+    "typescript": "^3.0.1"
+  }
+}

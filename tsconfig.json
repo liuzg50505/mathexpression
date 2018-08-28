@@ -1,0 +1,45 @@
+{
+  "compilerOptions": {
+    "noImplicitAny": true,
+    "sourceMap": true,
+    "target": "es5",
+    "module": "commonjs",
+    "watch": true,
+    "outDir": ".",
+    "experimentalDecorators": true,
+    "strictNullChecks": false
+  },
+  "files":[
+    "src/utils/arrayutils.ts",
+    "src/expressionbase.ts",
+    "src/mathexpressiontokenizer.ts",
+    "src/mathexpressionparser.ts",
+
+    "src/datacontexts/dictdatacontext.ts",
+    "src/datacontexts/jsobjectcontext.ts",
+    "src/datacontexts/combinedcontext.ts",
+
+    "src/operatornodes/addnode.ts",
+    "src/operatornodes/minusnode.ts",
+    "src/operatornodes/multiplynode.ts",
+    "src/operatornodes/dividenode.ts",
+    "src/operatornodes/modnode.ts",
+
+    "src/datanodes/constnode.ts",
+    "src/datanodes/variablenode.ts",
+    "src/datanodes/functionnode.ts",
+    "src/datanodes/propertyexpnode.ts",
+
+    "src/rangeitemparsers/constantrangeparser.ts",
+    "src/rangeitemparsers/variablerangeparser.ts",
+    "src/rangeitemparsers/functionrangeparser.ts",
+    "src/rangeitemparsers/propertyexpressionrangeparser.ts",
+
+    "src/bootstrap/defaultparser.ts"
+
+
+
+
+  ],
+  "exclude": ["node_modules"]
+}

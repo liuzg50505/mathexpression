@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script type="application/javascript" src="../dist/output.js"></script>
+</head>
+<body>
+<script>
+
+    let context = new MathExpressionLzg.JsobjectContext({
+        a:100,
+        max:function (v,u) {
+            if(u>v) return u;
+            else return v;
+        },
+        person:{
+            age:40,
+            luckynumbers:[3,4,5,6]
+        },
+
+        y445:10,
+        sdf:35
+    });
+
+    let parser = MathExpressionLzg.getDefaultExpressionParser();
+    var node = parser.parseExpression("a-max(22,33)+y445*5/(sdf%33)+34");
+    console.log(node);
+    var v = node.evaluate(context);
+    console.log(v);
+
+    console.log(parser.eval("a-person.age*2",context));
+    console.log(parser.eval("person.luckynumbers[person.luckynumbers.length-3]*2/person.luckynumbers[person.luckynumbers.length-2]+20",context));
+    console.log(parser.eval("max(person.luckynumbers[person.luckynumbers.length-3],person.luckynumbers[person.luckynumbers.length-1])*2/person.luckynumbers[person.luckynumbers.length-2]+20",context));
+
+
+
+</script>
+</body>
+</html>
