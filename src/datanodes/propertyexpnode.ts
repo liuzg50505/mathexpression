@@ -41,7 +41,7 @@ namespace MathExpressionLzg {
 
     export class PropertyExpressionNode extends ExpressionNode{
 
-        private propertyPathNodes: Array<PropertyPathNode>;
+        propertyPathNodes: Array<PropertyPathNode>;
 
         constructor(propertyPathNodes: Array<MathExpressionLzg.PropertyPathNode>=[]) {
             super();
