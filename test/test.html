@@ -32,6 +32,7 @@
     console.log(parser.eval("a-person.age*2",context));
     console.log(parser.eval("person.luckynumbers[person.luckynumbers.length-3]*2/person.luckynumbers[person.luckynumbers.length-2]+20",context));
     console.log(parser.eval("max(person.luckynumbers[person.luckynumbers.length-3],person.luckynumbers[person.luckynumbers.length-1])*2/person.luckynumbers[person.luckynumbers.length-2]+20",context));
+    console.log(parser.eval("max(person.luckynumbers[person.luckynumbers.length-3]+4,person.luckynumbers[person.luckynumbers.length-1])*2/person.luckynumbers[person.luckynumbers.length-2]+20",context));
 
 
 
