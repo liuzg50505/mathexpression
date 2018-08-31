@@ -49,7 +49,7 @@ namespace MathExpressionLzg {
         }
 
         evaluate(context: DataContext): any {
-            if(this.propertyPathNodes.length==0) return null;
+            if(this.propertyPathNodes.length==0) return context.getValue(null);
             let firstNode = this.propertyPathNodes[0];
             let curvalue = context.getValue(firstNode.propName);
             for (let i=1; i<this.propertyPathNodes.length;i++) {

@@ -14,6 +14,7 @@ namespace MathExpressionLzg {
         }
 
         getValue(name: string): any {
+            if(name==""||name==null) return this.datadict;
             return this.datadict[name];
         }
 

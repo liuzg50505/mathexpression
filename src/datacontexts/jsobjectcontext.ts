@@ -10,6 +10,7 @@ namespace MathExpressionLzg {
         }
 
         getValue(name: string): any {
+            if(name==""||name==null) return this.jsobject;
             return this.jsobject[name];
         }
 
